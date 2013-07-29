@@ -9,7 +9,7 @@ use File::Temp;
 use Exception::Simple;
 use URI;
 
-our $VERSION = '0.005';
+our $VERSION = '0.006';
 $VERSION = eval $VERSION;
 
 sub new{
@@ -195,7 +195,7 @@ returns a hash of the image info, from L<Data::Validate::Image>, with an extra p
 
 =head1 SUPPORT
 
-Bugs should always be submitted via the CPAN bug tracker
+Please submit bugs through L<https://github.com/n0body-/fetch-image/issues>
 
 For other issues, contact the maintainer
 
