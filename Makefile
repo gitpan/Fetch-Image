@@ -1,7 +1,7 @@
 # This Makefile is for the Fetch::Image extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 6.66 (Revision: 66600) from the contents of
+# 6.98 (Revision: 69800) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -20,9 +20,9 @@
 #     MIN_PERL_VERSION => q[5.008]
 #     NAME => q[Fetch::Image]
 #     NO_META => q[1]
-#     PREREQ_PM => { Exception::Simple=>q[0], Test::More=>q[0], LWPx::ParanoidAgent=>q[0], Test::Exception=>q[0], URI=>q[0], ExtUtils::MakeMaker=>q[6.59], Data::Validate::URI=>q[0], File::Temp=>q[0], Data::Validate::Image=>q[0] }
+#     PREREQ_PM => { LWP::UserAgent::Paranoid=>q[0], URI=>q[0], Test::Exception=>q[0], Data::Validate::Image=>q[0], Test::More=>q[0], ExtUtils::MakeMaker=>q[6.59], Data::Validate::URI=>q[0], Exception::Simple=>q[0], File::Temp=>q[0] }
 #     TEST_REQUIRES => {  }
-#     VERSION => q[0.006001]
+#     VERSION => q[1.000000]
 #     VERSION_FROM => q[lib/Fetch/Image.pm]
 #     dist => { PREOP=>q[$(PERL) -I. "-MModule::Install::Admin" -e "dist_preop(q($(DISTVNAME)))"] }
 #     realclean => { FILES=>q[MYMETA.yml] }
@@ -33,7 +33,7 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux/Config.pm).
+# These definitions are from config.sh (via /home/mark/.plenv/versions/5.20.0/lib/perl5/5.20.0/x86_64-linux/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = cc
@@ -46,14 +46,14 @@ FULL_AR = /usr/bin/ar
 LD = cc
 LDDLFLAGS = -shared -O2 -L/usr/local/lib -fstack-protector
 LDFLAGS =  -fstack-protector -L/usr/local/lib
-LIBC = /lib/libc-2.18.so
+LIBC = libc-2.19.so
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = linux
-OSVERS = 3.12.9-1-arch
+OSVERS = 3.15.8-1-arch
 RANLIB = :
-SITELIBEXP = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2
-SITEARCHEXP = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2/x86_64-linux
+SITELIBEXP = /home/mark/.plenv/versions/5.20.0/lib/perl5/site_perl/5.20.0
+SITEARCHEXP = /home/mark/.plenv/versions/5.20.0/lib/perl5/site_perl/5.20.0/x86_64-linux
 SO = so
 VENDORARCHEXP = 
 VENDORLIBEXP = 
@@ -65,11 +65,11 @@ DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
 NAME = Fetch::Image
 NAME_SYM = Fetch_Image
-VERSION = 0.006001
+VERSION = 1.000000
 VERSION_MACRO = VERSION
-VERSION_SYM = 0_006001
+VERSION_SYM = 1_000000
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 0.006001
+XS_VERSION = 1.000000
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib/arch
@@ -83,55 +83,55 @@ MAN3EXT = 3
 INSTALLDIRS = site
 DESTDIR = 
 PREFIX = $(SITEPREFIX)
-PERLPREFIX = /home/mark/perl5/perlbrew/perls/perl-5.18.1
-SITEPREFIX = /home/mark/perl5/perlbrew/perls/perl-5.18.1
+PERLPREFIX = /home/mark/.plenv/versions/5.20.0
+SITEPREFIX = /home/mark/.plenv/versions/5.20.0
 VENDORPREFIX = 
-INSTALLPRIVLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2
+INSTALLPRIVLIB = /home/mark/.plenv/versions/5.20.0/lib/perl5/5.20.0
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2
+INSTALLSITELIB = /home/mark/.plenv/versions/5.20.0/lib/perl5/site_perl/5.20.0
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
 INSTALLVENDORLIB = 
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux
+INSTALLARCHLIB = /home/mark/.plenv/versions/5.20.0/lib/perl5/5.20.0/x86_64-linux
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2/x86_64-linux
+INSTALLSITEARCH = /home/mark/.plenv/versions/5.20.0/lib/perl5/site_perl/5.20.0/x86_64-linux
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
 INSTALLVENDORARCH = 
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
-INSTALLBIN = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin
+INSTALLBIN = /home/mark/.plenv/versions/5.20.0/bin
 DESTINSTALLBIN = $(DESTDIR)$(INSTALLBIN)
-INSTALLSITEBIN = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin
+INSTALLSITEBIN = /home/mark/.plenv/versions/5.20.0/bin
 DESTINSTALLSITEBIN = $(DESTDIR)$(INSTALLSITEBIN)
 INSTALLVENDORBIN = 
 DESTINSTALLVENDORBIN = $(DESTDIR)$(INSTALLVENDORBIN)
-INSTALLSCRIPT = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin
+INSTALLSCRIPT = /home/mark/.plenv/versions/5.20.0/bin
 DESTINSTALLSCRIPT = $(DESTDIR)$(INSTALLSCRIPT)
-INSTALLSITESCRIPT = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin
+INSTALLSITESCRIPT = /home/mark/.plenv/versions/5.20.0/bin
 DESTINSTALLSITESCRIPT = $(DESTDIR)$(INSTALLSITESCRIPT)
 INSTALLVENDORSCRIPT = 
 DESTINSTALLVENDORSCRIPT = $(DESTDIR)$(INSTALLVENDORSCRIPT)
-INSTALLMAN1DIR = /home/mark/perl5/perlbrew/perls/perl-5.18.1/man/man1
+INSTALLMAN1DIR = /home/mark/.plenv/versions/5.20.0/man/man1
 DESTINSTALLMAN1DIR = $(DESTDIR)$(INSTALLMAN1DIR)
-INSTALLSITEMAN1DIR = /home/mark/perl5/perlbrew/perls/perl-5.18.1/man/man1
+INSTALLSITEMAN1DIR = /home/mark/.plenv/versions/5.20.0/man/man1
 DESTINSTALLSITEMAN1DIR = $(DESTDIR)$(INSTALLSITEMAN1DIR)
 INSTALLVENDORMAN1DIR = 
 DESTINSTALLVENDORMAN1DIR = $(DESTDIR)$(INSTALLVENDORMAN1DIR)
-INSTALLMAN3DIR = /home/mark/perl5/perlbrew/perls/perl-5.18.1/man/man3
+INSTALLMAN3DIR = /home/mark/.plenv/versions/5.20.0/man/man3
 DESTINSTALLMAN3DIR = $(DESTDIR)$(INSTALLMAN3DIR)
-INSTALLSITEMAN3DIR = /home/mark/perl5/perlbrew/perls/perl-5.18.1/man/man3
+INSTALLSITEMAN3DIR = /home/mark/.plenv/versions/5.20.0/man/man3
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = 
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
 PERL_LIB =
-PERL_ARCHLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux
+PERL_ARCHLIB = /home/mark/.plenv/versions/5.20.0/lib/perl5/5.20.0/x86_64-linux
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux/CORE
-PERL = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin/perl "-Iinc"
-FULLPERL = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin/perl "-Iinc"
+PERL_INC = /home/mark/.plenv/versions/5.20.0/lib/perl5/5.20.0/x86_64-linux/CORE
+PERL = /home/mark/.plenv/versions/5.20.0/bin/perl5.20.0 "-Iinc"
+FULLPERL = /home/mark/.plenv/versions/5.20.0/bin/perl5.20.0 "-Iinc"
 ABSPERL = $(PERL)
 PERLRUN = $(PERL)
 FULLPERLRUN = $(FULLPERL)
@@ -144,9 +144,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/ExtUtils/MakeMaker.pm
-MM_VERSION  = 6.66
-MM_REVISION = 66600
+MAKEMAKER   = /home/mark/.plenv/versions/5.20.0/lib/perl5/5.20.0/ExtUtils/MakeMaker.pm
+MM_VERSION  = 6.98
+MM_REVISION = 69800
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -198,7 +198,7 @@ PM_TO_BLIB = lib/Fetch/Image.pm \
 
 
 # --- MakeMaker platform_constants section:
-MM_Unix_VERSION = 6.66
+MM_Unix_VERSION = 6.98
 PERL_MALLOC_DEF = -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc
 
 
@@ -240,6 +240,7 @@ MACROSTART =
 MACROEND = 
 USEMAKEFILE = -f
 FIXIN = $(ABSPERLRUN) -MExtUtils::MY -e 'MY->fixin(shift)' --
+CP_NONEMPTY = $(ABSPERLRUN) -MExtUtils::Command::MM -e 'cp_nonempty' --
 
 
 # --- MakeMaker makemakerdflt section:
@@ -263,7 +264,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = Fetch-Image
-DISTVNAME = Fetch-Image-0.006001
+DISTVNAME = Fetch-Image-1.000000
 
 
 # --- MakeMaker macro section:
@@ -384,15 +385,15 @@ linkext :: $(LINKTYPE)
 # --- MakeMaker dlsyms section:
 
 
-# --- MakeMaker dynamic section:
-
-dynamic :: $(FIRST_MAKEFILE) $(INST_DYNAMIC) $(INST_BOOT)
-	$(NOECHO) $(NOOP)
-
-
 # --- MakeMaker dynamic_bs section:
 
 BOOTSTRAP =
+
+
+# --- MakeMaker dynamic section:
+
+dynamic :: $(FIRST_MAKEFILE) $(BOOTSTRAP) $(INST_DYNAMIC)
+	$(NOECHO) $(NOOP)
 
 
 # --- MakeMaker dynamic_lib section:
@@ -445,24 +446,25 @@ clean_subdirs :
 
 clean :: clean_subdirs
 	- $(RM_F) \
-	  core $(INST_ARCHAUTODIR)/extralibs.all \
-	  core.[0-9] tmon.out \
-	  core.*perl.*.? *$(OBJ_EXT) \
-	  perl.exe perl$(EXE_EXT) \
-	  perlmain.c core.[0-9][0-9][0-9][0-9] \
-	  $(BASEEXT).exp $(BOOTSTRAP) \
-	  MYMETA.yml $(BASEEXT).bso \
-	  $(BASEEXT).x pm_to_blib \
-	  lib$(BASEEXT).def $(MAKE_APERL_FILE) \
-	  $(INST_ARCHAUTODIR)/extralibs.ld core.[0-9][0-9][0-9] \
-	  *perl.core blibdirs.ts \
-	  so_locations MYMETA.json \
-	  pm_to_blib.ts core.[0-9][0-9] \
-	  perl core.[0-9][0-9][0-9][0-9][0-9] \
-	  *$(LIB_EXT) $(BASEEXT).def \
-	  mon.out 
+	  $(BASEEXT).bso $(BASEEXT).def \
+	  $(BASEEXT).exp $(BASEEXT).x \
+	  $(BOOTSTRAP) $(INST_ARCHAUTODIR)/extralibs.all \
+	  $(INST_ARCHAUTODIR)/extralibs.ld $(MAKE_APERL_FILE) \
+	  *$(LIB_EXT) *$(OBJ_EXT) \
+	  *perl.core MYMETA.json \
+	  MYMETA.yml blibdirs.ts \
+	  core core.*perl.*.? \
+	  core.[0-9] core.[0-9][0-9] \
+	  core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+	  core.[0-9][0-9][0-9][0-9][0-9] lib$(BASEEXT).def \
+	  mon.out perl \
+	  perl$(EXE_EXT) perl.exe \
+	  perlmain.c pm_to_blib \
+	  pm_to_blib.ts so_locations \
+	  tmon.out 
 	- $(RM_RF) \
 	  blib 
+	  $(NOECHO) $(RM_F) $(MAKEFILE_OLD)
 	- $(MV) $(FIRST_MAKEFILE) $(MAKEFILE_OLD) $(DEV_NULL)
 
 
@@ -475,9 +477,9 @@ realclean_subdirs :
 # Delete temporary files (via clean) and also delete dist files
 realclean purge ::  clean realclean_subdirs
 	- $(RM_F) \
-	  $(MAKEFILE_OLD) $(FIRST_MAKEFILE) 
+	  $(FIRST_MAKEFILE) $(MAKEFILE_OLD) 
 	- $(RM_RF) \
-	  MYMETA.yml $(DISTVNAME) 
+	  $(DISTVNAME) MYMETA.yml 
 
 
 # --- MakeMaker metafile section:
@@ -504,7 +506,7 @@ manifest :
 	$(PERLRUN) "-MExtUtils::Manifest=mkmanifest" -e mkmanifest
 
 veryclean : realclean
-	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old 
+	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old
 
 
 
@@ -519,6 +521,7 @@ tardist : $(DISTVNAME).tar$(SUFFIX)
 
 uutardist : $(DISTVNAME).tar$(SUFFIX)
 	uuencode $(DISTVNAME).tar$(SUFFIX) $(DISTVNAME).tar$(SUFFIX) > $(DISTVNAME).tar$(SUFFIX)_uu
+	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)_uu'
 
 $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(PREOP)
@@ -526,6 +529,7 @@ $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(TAR) $(TARFLAGS) $(DISTVNAME).tar $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
 	$(COMPRESS) $(DISTVNAME).tar
+	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)'
 	$(POSTOP)
 
 zipdist : $(DISTVNAME).zip
@@ -535,12 +539,14 @@ $(DISTVNAME).zip : distdir
 	$(PREOP)
 	$(ZIP) $(ZIPFLAGS) $(DISTVNAME).zip $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
+	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).zip'
 	$(POSTOP)
 
 shdist : distdir
 	$(PREOP)
 	$(SHAR) $(DISTVNAME) > $(DISTVNAME).shar
 	$(RM_RF) $(DISTVNAME)
+	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).shar'
 	$(POSTOP)
 
 
@@ -585,7 +591,7 @@ distmeta : create_distdir metafile
 
 # --- MakeMaker distsignature section:
 distsignature : create_distdir
-	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e 'eval { maniadd({q{SIGNATURE} => q{Public-key signature (added by MakeMaker)}}) } ' \
+	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e 'eval { maniadd({q{SIGNATURE} => q{Public-key signature (added by MakeMaker)}}) }' \
 	  -e '    or print "Could not add SIGNATURE to MANIFEST: $$$${'\''@'\''}\n"' --
 	$(NOECHO) cd $(DISTVNAME) && $(TOUCH) SIGNATURE
 	cd $(DISTVNAME) && cpansign -s
@@ -655,6 +661,7 @@ pure_vendor_install :: all
 		$(INST_SCRIPT) $(DESTINSTALLVENDORSCRIPT) \
 		$(INST_MAN1DIR) $(DESTINSTALLVENDORMAN1DIR) \
 		$(INST_MAN3DIR) $(DESTINSTALLVENDORMAN3DIR)
+
 
 doc_perl_install :: all
 	$(NOECHO) $(ECHO) Appending installation info to $(DESTINSTALLARCHLIB)/perllocal.pod
@@ -732,7 +739,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = perl
-FULLPERL      = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin/perl
+FULLPERL      = /home/mark/.plenv/versions/5.20.0/bin/perl5.20.0
 
 $(MAP_TARGET) :: static $(MAKE_APERL_FILE)
 	$(MAKE) $(USEMAKEFILE) $(MAKE_APERL_FILE) $@
@@ -762,7 +769,7 @@ subdirs-test ::
 
 
 test_dynamic :: pure_all
-	PERL_DL_NONLAZY=1 $(FULLPERLRUN) "-MExtUtils::Command::MM" "-e" "test_harness($(TEST_VERBOSE), 'inc', '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
+	PERL_DL_NONLAZY=1 $(FULLPERLRUN) "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness($(TEST_VERBOSE), 'inc', '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
 
 testdb_dynamic :: pure_all
 	PERL_DL_NONLAZY=1 $(FULLPERLRUN) $(TESTDB_SW) "-Iinc" "-I$(INST_LIB)" "-I$(INST_ARCHLIB)" $(TEST_FILE)
@@ -785,9 +792,9 @@ ppd :
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Data::Validate::URI" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Exception::Simple" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="File::Temp" />' >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '        <REQUIRE NAME="LWPx::ParanoidAgent" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="LWP::UserAgent::Paranoid" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="URI::" />' >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-5.18" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-5.20" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <CODEBASE HREF="" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    </IMPLEMENTATION>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '</SOFTPKG>' >> $(DISTNAME).ppd
@@ -808,7 +815,7 @@ pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 
 
 # End.
-# Postamble by Module::Install 1.06
+# Postamble by Module::Install 1.10
 # --- Module::Install::Admin::Makefile section:
 
 realclean purge ::
@@ -843,14 +850,14 @@ installdeps_notest ::
 	$(NOECHO) $(NOOP)
 
 upgradedeps ::
-	$(PERL) Makefile.PL --config= --upgradedeps=Test::More,0,Test::Exception,0,LWPx::ParanoidAgent,0,Data::Validate::Image,0,Data::Validate::URI,0,File::Temp,0,Exception::Simple,0,URI,0
+	$(PERL) Makefile.PL --config= --upgradedeps=Test::More,0,Test::Exception,0,LWP::UserAgent::Paranoid,0,Data::Validate::Image,0,Data::Validate::URI,0,File::Temp,0,Exception::Simple,0,URI,0
 
 upgradedeps_notest ::
-	$(PERL) Makefile.PL --config=notest,1 --upgradedeps=Test::More,0,Test::Exception,0,LWPx::ParanoidAgent,0,Data::Validate::Image,0,Data::Validate::URI,0,File::Temp,0,Exception::Simple,0,URI,0
+	$(PERL) Makefile.PL --config=notest,1 --upgradedeps=Test::More,0,Test::Exception,0,LWP::UserAgent::Paranoid,0,Data::Validate::Image,0,Data::Validate::URI,0,File::Temp,0,Exception::Simple,0,URI,0
 
 listdeps ::
 	@$(PERL) -le "print for @ARGV" 
 
 listalldeps ::
-	@$(PERL) -le "print for @ARGV" Test::More Test::Exception LWPx::ParanoidAgent Data::Validate::Image Data::Validate::URI File::Temp Exception::Simple URI
+	@$(PERL) -le "print for @ARGV" Test::More Test::Exception LWP::UserAgent::Paranoid Data::Validate::Image Data::Validate::URI File::Temp Exception::Simple URI
 
